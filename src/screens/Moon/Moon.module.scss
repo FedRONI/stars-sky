@@ -5,6 +5,7 @@
     top: 15%;
     left: 70%;
     transform: rotate(200deg);
+    scale: 2;
 }
 
 ._:hover {
@@ -18,12 +19,12 @@ svg {
 
 @keyframes moon {
     0%{
-        transform: rotate(0deg) scale(7,5) skew(0deg, 0deg) matrix(1, 2, 3, 4, 5, 6);
+        transform: rotate(0deg) scale(1,1) skew(0deg, 0deg) matrix(1, 2, 3, 4, 5, 6);
     }
     50%{
         transform: rotate(200deg) scale(3,8) skew(30deg, 20deg) matrix(6, 5, 4, 3, 2, 1);
     }
     100%{
-        transform: rotate(360deg) scale(7,5) skew(0deg, 0deg) matrix(1, 2, 3, 4, 5, 6);
+        transform: rotate(360deg) scale(1,1) skew(0deg, 0deg) matrix(1, 2, 3, 4, 5, 6);
     }
 }
