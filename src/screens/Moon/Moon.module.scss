@@ -3,6 +3,55 @@
     width: 72px;
     position: absolute;
     top: 15%;
+<<<<<<< HEAD
+    left: 50%;
+    display: flex;
+    z-index: 10;
+    zoom: 2.5;
+    transform: rotate(15deg) scaleX(-1);
+    transition: 0.25s;
+}
+svg {
+    animation: moon_rotate infinite linear 5s;
+}
+._:hover svg {
+    animation: moon_scale infinite linear 0.5s;
+}
+
+@keyframes moon_rotate {
+    0%{
+        transform: rotate(0deg);
+        filter: drop-shadow(0px 0px 5px rgb(255, 166, 0)) drop-shadow(0px 0px 40px rgb(255, 166, 0)) blur(1px);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(15deg);
+        filter: drop-shadow(0px 0px 15px rgb(255, 166, 0)) drop-shadow(0px 0px 40px rgb(255, 166, 0)) blur(1.5px);
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    100%{
+        filter: drop-shadow(0px 0px 5px rgb(255, 166, 0)) drop-shadow(0px 0px 40px rgb(255, 166, 0)) blur(1px);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moon_scale {
+    0%{
+        transform: matrix(1,2,3,4,5,6) scale(1) rotate(0deg)
+
+    }
+    50%{
+        transform: matrix(1,2,4,5) scale(2, 5);
+    }
+    100%{
+        transform: matrix(1,2,3,4,5,6) scale(1) rotate(360deg);
+    }
+}
+=======
     left: 70%;
     transform: rotate(200deg);
     scale: 2;
@@ -28,3 +77,4 @@ svg {
         transform: rotate(360deg) scale(1,1) skew(0deg, 0deg) matrix(1, 2, 3, 4, 5, 6);
     }
 }
+>>>>>>> 3e8f10a50eff58e5f2f28077c9c98e76f2789f34

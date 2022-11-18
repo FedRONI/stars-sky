@@ -3,8 +3,8 @@ import StarView from "./StarView";
 import useStar from "./useStar";
 
 
-const Star = ({star}) => {
-    return(<StarView {...useStar(star)}/>);
+const Star = (props) => {
+    return(<StarView {...useStar(props)}/>);
 }
 
 export default Star;
